@@ -1,19 +1,13 @@
 {
   "name": "webpack_project",
   "version": "1.0.0",
-  "description": "webpack project front end course Beetroot Academy",
+  "description": "Project for my front-end courses",
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
     "start": "webpack-dev-server  --env.mode development --progress --hide-modules --open",
     "build": "npm run webpack -- --env.mode production"
   },
-  "keywords": [
-    "Beetroot",
-    "Academy",
-    "Front-end"
-  ],
-  "author": "Roman Nikiforov",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
