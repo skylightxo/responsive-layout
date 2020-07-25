@@ -1,0 +1,204 @@
+/** ---------------------------------------------------------------------------
+   * Navbar.
+   * ------------------------------------------------------------------------- */
+
+.header {
+  padding: 1rem 5rem;
+  &__logo {
+    flex: 0 0 30%;
+    align-content: center;
+  }
+  &__settings {
+    flex: 0 0 30%;
+    &_wishl {
+      display: block;
+      width: 24px;
+    }
+    &_search {
+      margin-right: 0;
+    }
+  }
+}
+
+.cart {
+  width: 400px;
+  &__btns {
+    display: flex;
+    flex-direction: row;
+    &_view-cart {
+      flex: 50%;
+    }
+    &_checkout {
+      flex: 50%;
+    }
+  }
+}
+
+// main style
+.main__products {
+  justify-content: space-evenly;
+  &_item {
+    max-width: 35%;
+    margin-bottom: 3rem;
+    &_img {
+      margin-left: 10%;
+    }
+    &_num {
+      font-size: 1.4rem;
+      margin: -5rem 0 -1.3rem 0;
+    }
+    &_type {
+      font-size: 1.8rem;
+      margin-bottom: 0rem;
+    }
+    &:nth-of-type(2) {
+      margin-right: 10%;
+    }
+    &:nth-of-type(4) {
+      margin-right: 10%;
+    }
+  }
+}
+.main__new-products {
+  padding: 3rem 6rem 0rem;
+  &_h {
+    font-size: 2.2rem;
+  }
+  &_subh {
+    font-size: 1.5rem;
+  }
+  &_btn {
+    padding: 1rem;
+    margin: 2rem 30% 6rem;
+  }
+}
+.main__recent {
+  &_h {
+    margin-top: 7rem;
+    font-size: 2.2rem;
+  }
+  &_subh {
+    font-size: 1.5rem;
+  }
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 25%;
+    margin-left: 2.25rem;
+    &_img {
+      max-width: 100%;
+    }
+    &_name {
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+    &_cost {
+      font-size: 1.3rem;
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      text-transform: none;
+    }
+    &_rating {
+      order: 0;
+    }
+    &_cart {
+      max-height: 2rem;
+      display: flex;
+      margin-top: -0.2rem;
+      padding: 0.5rem;
+      border: 1px solid $black;
+      img {
+        width: 24px;
+        margin-top: -3px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.item {
+  &__content {
+    flex-direction: row;
+  }
+  &__cost {
+    margin: 1rem rem(10px) 0 auto;
+    text-align: right;
+  }
+}
+.main__banners {
+  &_visit {
+    height: 18rem;
+    &_h {
+      font-size: 2rem;
+    }
+    &_address {
+      font-size: 1.3rem;
+    }
+    &_s {
+      font-size: 1rem;
+    }
+  }
+  &_follow {
+    height: 18rem;
+    &_h {
+      font-size: 2rem;
+    }
+    &_link {
+      font-size: 1rem;
+    }
+  }
+}
+.footer {
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    &_item {
+      max-width: 30%;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 3rem 2rem;
+      a {
+        margin: 0.6rem;
+      }
+      &:last-of-type {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.form-group {
+  display: flex;
+  input {
+    width: 350px;
+  }
+  button {
+    width: 7rem;
+  }
+}
+
+.copyright {
+  &__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+  &__copy {
+    margin: 0 0 0 auto;
+  }
+  &__payment {
+    margin: 0 0 0 auto;
+    min-width: 100%;
+    justify-content: flex-end;
+  }
+}
+.payment-icon {
+  margin: 0 0 0 5px;
+}

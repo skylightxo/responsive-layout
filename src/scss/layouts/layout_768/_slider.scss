@@ -1,0 +1,28 @@
+.main__slider {
+  min-height: rem(550px);
+}
+
+.slider-item {
+  min-height: rem(550px);
+
+  @include e(content) {
+    padding-top: 25%;
+
+    @include m(title) {
+      font-size: rem(20px);
+    }
+
+    @include m(text) {
+      font-size: rem(32px);
+    }
+
+    @include m(button) {
+      font-size: rem(12px);
+    }
+  }
+
+  .slick-dots {
+    margin: 0px;
+    padding: 0;
+  }
+}

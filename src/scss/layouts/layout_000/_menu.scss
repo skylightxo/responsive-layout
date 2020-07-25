@@ -1,0 +1,190 @@
+.menu {
+  display: none;
+}
+
+/** ---------------------------------------------------------------------------
+ * Menu button.
+ * ------------------------------------------------------------------------- */
+
+.menu-button {
+  display: inline-block;
+  margin-right: 25%;
+  transition: 0.3s ease-in-out;
+  width: 32px;
+  height: 18px;
+  position: relative;
+}
+.menu-button .in-mobile {
+  position: absolute;
+}
+
+.menu-button span {
+  position: absolute;
+  height: 4px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: $spanGray;
+  top: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.menu-button span:nth-child(1) {
+  top: 0;
+}
+
+.menu-button span:nth-child(2),
+.menu-button span:nth-child(3) {
+  top: 10px;
+}
+
+.menu-button span:nth-child(4) {
+  top: 20px;
+  width: 18px;
+}
+
+.menu-button.active {
+  margin-left: 2rem;
+}
+
+.menu-button.active span:nth-child(1),
+.menu-button.active span:nth-child(4) {
+  opacity: 0;
+}
+
+.menu-button.active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu-button.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/** ---------------------------------------------------------------------------
+   * Mobile menu 
+   * ------------------------------------------------------------------------- */
+/* Dark overlay.  */
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 99998;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.dark-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile menu. */
+.mobile-menu {
+  background-color: $white;
+  padding: 3rem 0 2rem;
+  position: fixed;
+  width: 20rem;
+  top: 0;
+  left: -100%;
+  //
+  transition: left 1s;
+  //
+  z-index: 99999;
+  height: 100%;
+  overflow: scroll;
+}
+
+.mobile-menu.visible {
+  left: 0;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-navigation {
+  margin-top: 2rem;
+}
+.mobile-navigation a {
+  display: block;
+  padding: 1rem;
+  color: #3d4146;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.mobile-navigation a.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-navigation li {
+  position: relative;
+}
+
+.additional_item {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 2.6rem;
+  &_1 {
+    margin-top: 1rem;
+  }
+  &_2 {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  &_3 {
+    margin: 0 1.8rem;
+  }
+  &_4 {
+    margin: 0 1.8rem;
+  }
+}
+.line {
+  position: relative;
+  height: 6px;
+  max-width: 70%;
+  margin: 2.5rem 0 1.25rem 2.6rem;
+  background-color: $black;
+}
+/* 1st level. */
+.mobile-navigation > ul > li > a {
+  margin-left: 1.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* Lower levels. */
+.mobile-navigation li ul {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  padding: 1.5rem 0 1.5rem 3.5rem;
+  display: none;
+}
+
+/* Drop-down arrows. */
+.mobile-navigation li.has-submenu:after {
+  content: "";
+  position: absolute;
+  top: 1.6rem;
+  width: 0;
+  height: 0;
+}
+
+.mobile-navigation li.has-submenu:after {
+  right: 1rem;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.25);
+}
+
+.mobile-navigation li.has-submenu.opened:after {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.25);
+  border-top: none;
+}

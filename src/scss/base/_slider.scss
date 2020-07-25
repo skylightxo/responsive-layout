@@ -1,0 +1,68 @@
+.main__slider {
+  margin-bottom: rem(20px);
+  min-height: rem(280px);
+  width: 100%;
+}
+
+.slider-item {
+  position: relative;
+  max-width: 100%;
+  max-height: 700px;
+  min-height: rem(280px);
+  background-size: cover;
+  background-position-x: 45%;
+  outline: none;
+
+  @include e(content) {
+    padding-top: 16%;
+    padding-left: 12%;
+
+    @include m(title) {
+      font-size: rem(13px);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      @include m(1) {
+        color: #a27e66;
+      }
+      @include m(2) {
+        color: #e34343;
+      }
+      @include m(3) {
+        color: #8fa149;
+      }
+    }
+
+    @include m(text) {
+      font-size: rem(24px);
+      font-weight: 600;
+      line-height: 1.2;
+      max-width: 70%;
+    }
+
+    @include m(button) {
+      letter-spacing: 2px;
+      font-size: rem(10px);
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      &:after {
+        bottom: -5px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        background: $black;
+        transition: background 0.3s ease 0s;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.slick-dots {
+  margin-bottom: 50px;
+  padding: 0;
+}

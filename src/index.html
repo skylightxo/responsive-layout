@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="i/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Barberry</title>
+  </head>
+  <body>
+    <header>
+    <div class="header__container">
+      <div class="header">
+        <a href="#" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+            <div class="navbar">
+                <nav class="menu" id="nav">
+                    <ul class="menu-desktop">
+                       <li>
+                         <a href="#">Home</a>
+                        </li>
+                       <li class="has-submenu">
+                         <a class="is-submenu" href="#">Features</a>
+                            <ul>
+                              <li><a href="#">Fullwidth Banner</a></li>
+                              <li><a href="#">Boxed Image</a></li>
+                              <li><a href="#">Boxed Slider</a></li>
+                              <li><a href="#">Sidebar</a></li>
+                            </ul>
+                        </li>
+                       <li class="has-submenu">
+                         <a class="is-submenu" href="#">The Shop</a>
+                            <ul>
+                              <li><a href="#">Fullwidth Banner</a></li>
+                              <li><a href="#">Boxed Image</a></li>
+                              <li><a href="#">Boxed Slider</a></li>
+                              <li><a href="#">Sidebar</a></li>
+                            </ul>
+                        </li>
+                       <li class="has-submenu">
+                         <a class="is-submenu" href="#">The Blog</a>
+                            <ul>
+                              <li><a href="#">Fullwidth Banner</a></li>
+                              <li><a href="#">Boxed Image</a></li>
+                              <li><a href="#">Boxed Slider</a></li>
+                              <li><a href="#">Sidebar</a></li>
+                            </ul>
+                        </li>
+                  </nav>
+                </div>
+                  <div class="header__logo">
+                    <img src="i/logo.png" alt="Barberry" />
+                  </div>
+                  <div class="header__settings">
+                        <img class="header__settings_search" src="i/search.svg" alt="search">
+                        <img class="header__settings_wishl" src="i/heart.svg" alt="wishlist">
+                        <a class="header__settings_myacc" href="#">My Account</a>
+                        <a class="header__settings_cart" href="#"><span class="cart__name">Cart </span><span class="cart__count">0</span></a>
+                  </div>
+                </div>
+            </header>
+
+                  <div class="dark-overlay"></div>
+      
+                  <div class="mobile-menu ">
+                       <a href="#" class="menu-button in-mobile active">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </a>
+                      <nav class="mobile-navigation">        
+                        <ul>
+                          <li>
+                            <a href="#">Home</a>
+                           </li>
+                          <li class="has-submenu">
+                            <a class="is-submenu" href="#">Features</a>
+                                <ul>
+                                 <li>Fullwidth Banner</li>
+                                 <li>Boxed Image</li>
+                                 <li>Boxed Slider</li>
+                                 <li>Sidebar</li>
+                               </ul>
+                             </li>
+                          <li class="has-submenu">
+                            <a class="is-submenu" href="#">The Shop</a>
+                                <ul>
+                                 <li>Fullwidth Banner</li>
+                                 <li>Boxed Image</li>
+                                 <li>Boxed Slider</li>
+                                 <li>Sidebar</li>
+                               </ul>
+                             </li>
+                          <li class="has-submenu">
+                            <a class="is-submenu" href="#">The Blog</a>
+                                <ul>
+                                 <li>Fullwidth Banner</li>
+                                 <li>Boxed Image</li>
+                                 <li>Boxed Slider</li>
+                                 <li>Sidebar</li>
+                               </ul>
+                             </li>
+                            <li class="additional_item additional_item_1">
+                                My account
+                            </li>
+                            <li class="additional_item additional_item_2">
+                                My wishlist
+                            </li>
+                            <li class="line"></li>
+                            <li class="additional_item additional_item_3">
+                                <p>
+                                    <a href="mailto:info@site.com">info@site.com</a>
+                                </p>
+                            </li>
+                                <li class="additional_item additional_item_4">
+                                    <p>
+                                        <a href="tel:+123123123">+123123123</a>
+                                    </p>
+                                </li>
+                       </ul>
+                    </nav>
+      </div>
+      <div class="cart">
+        <div class="cart__container">
+            <div class="cart__heading"></div>
+            <div class="cart__close">
+                <a href="#" class="close-button">
+                    <span></span>
+                    <span></span>
+                  </a>
+            </div>
+            <div class="cart__content">
+                <ul class="cart__list">
+                    <li class="cart__empty visible">No products in the Cart.</li>
+                    <li class="cart__return visible">
+                        <a class="cart__return_btn" href="#">
+                            Return to Shop
+                        </a>
+                    </li>
+                </ul>
+                <div class="cart__meta">
+                    <hr class="cart__rule">
+                    <p class="cart__total">
+                        <b>Subtotal</b>
+                        <span class="money price">169$</span>
+                        <div class="cart__actions">
+                            <p class="cart__condition">
+                                <input class="cart__agree" type="checkbox" id="cart__agree-1" data-message="You must agree with the terms and conditions of sales to check out.">
+                                <label for="cart__agree-1"><p>I agree with the <a href="#" class="cart__terms">terms and conditions</a>.</p></label>
+                            </p>
+                            <div class="cart__btns">
+                                <a class="cart__btns_view-cart" href="#">View Cart</a>
+                                <a class="cart__btns_checkout" href="#">Checkout</a>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </header>
+    <main class="main">
+        <div class="main__slider fade">
+            <div class="slider-item" style="background-image : url(i/slider_1.webp)" >
+              <div class="slider-item__content">
+                <p class="slider-item__content_title slider-item__content_title_1">New Arrivals</p>
+                <p class="slider-item__content_text">New Portable Bluetooth Speaker</p>
+                <button class="slider-item__content_button">Shop Now</button>
+              </div>
+           </div>
+             <div class="slider-item" style="background-image : url(i/slider_2.webp)" >
+              <div class="slider-item__content">
+                <p class="slider-item__content_title slider-item__content_title_2">November Sales</p>
+                <p class="slider-item__content_text">Clearance Sales Up to 30% Off</p>
+                <button class="slider-item__content_button">Shop Now</button>
+              </div>
+            </div> 
+             <div class="slider-item" style="background-image : url(i/slider_3.webp)" >
+              <div class="slider-item__content">
+                <p class="slider-item__content_title slider-item__content_title_3">Living Room</p>
+                <p class="slider-item__content_text">New Autumn Furniture Collection</p>
+                <button class="slider-item__content_button">Explore</button>
+              </div>
+            </div> 
+        </div>
+        <div class="main__products">
+            <div class="main__products_item">
+                <img class="main__products_item_img" src="i/product_item_4.webp" alt="">
+                <p class="main__products_item_num">8 products</p>
+                <p class="main__products_item_type">Living Room</p>
+            </div>
+            <div class="main__products_item">
+                <img class="main__products_item_img" src="i/product_item_1.webp" alt="">
+                <p class="main__products_item_num">4 products</p>
+                <p class="main__products_item_type">Accessories</p>
+            </div>
+            <div class="main__products_item">
+                <img class="main__products_item_img" src="i/product_item_2.webp" alt="">
+                <p class="main__products_item_num">4 products</p>
+                <p class="main__products_item_type">Bathroom</p>
+            </div>
+            <div class="main__products_item">
+                <img class="main__products_item_img" src="i/product_item_3.webp" alt="">
+                <p class="main__products_item_num">3 products</p>
+                <p class="main__products_item_type">Kitchen</p>
+            </div>
+        </div>
+        <div class="main__recent">
+            <p class="main__recent_h">Recent Products</p>
+            <p class="main__recent_subh">Recent put graduated basketball or football</p>
+            <div class="main__recent_container">
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/portable.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="1">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Portable Bluetooth Speaker</p>
+                    <p class="main__recent_item_cost">$249</p>
+                </div>
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/elephant_1.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="2">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★✰</p>
+                    <p class="main__recent_item_name">Elephant Chair</p>
+                    <p class="main__recent_item_cost">$169</p>
+                </div>
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/headphones_1.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="3">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★✰✰</p>
+                    <p class="main__recent_item_name">Headphones</p>
+                    <p class="main__recent_item_cost">$499</p>
+                </div>
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/clock.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="4">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★✰✰</p>
+                    <p class="main__recent_item_name">Decorative Alarm Clock</p>
+                    <p class="main__recent_item_cost">$65</p>
+                </div>
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/chair.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="5">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Molded Plastic Armchair</p>
+                    <p class="main__recent_item_cost">$560</p>
+                </div>
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/chair_2.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="6">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Lounge Chair</p>
+                    <p class="main__recent_item_cost">$599</p>
+                </div>
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/chair_3.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="7">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★✰</p>
+                    <p class="main__recent_item_name">Clinical gate Armchair</p>
+                    <p class="main__recent_item_cost">$2350</p>
+                </div>
+                <div class="main__recent_item">
+                    <img class="main__recent_item_img" src="i/portable.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="1">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Portable Bluetooth Speaker</p>
+                    <p class="main__recent_item_cost">$249</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main__new-products">
+            <p class="main__new-products_h">It's all New, <br> It all arrived this week</p>
+            <p class="main__new-products_subh">Furniture axe heirloom ethical man bun sustainable. Pickled normcore selvage, bespoke four dollar toast neutra chartreuse vinyl.</p>
+            <p class="main__new-products_btn"> show all new products </p>
+            <div class="new-products__slider">
+                <div class="new-products__slider_item">
+                    <img class="main__recent_item_img" src="i/portable_trans.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="1">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Portable Bluetooth Speaker</p>
+                    <p class="main__recent_item_cost">$249</p>
+                </div>
+                <div class="new-products__slider_item">
+                    <img class="main__recent_item_img" src="i/elephant_1_trans.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="1">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Portable Bluetooth Speaker</p>
+                    <p class="main__recent_item_cost">$249</p>
+                </div>
+                <div class="new-products__slider_item">
+                    <img class="main__recent_item_img" src="i/chair_3_trans.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="1">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Portable Bluetooth Speaker</p>
+                    <p class="main__recent_item_cost">$249</p>
+                </div>
+                <div class="new-products__slider_item">
+                    <img class="main__recent_item_img" src="i/chair_3_trans.webp" alt="">
+                    <p class="main__recent_item_cart" data-id="1">Add to Cart <img src="i/shopping_bag.svg" alt=""></p>
+                    <p class="main__recent_item_rating">★★★★★</p>
+                    <p class="main__recent_item_name">Portable Bluetooth Speaker</p>
+                    <p class="main__recent_item_cost">$249</p>
+                </div>
+            </div>
+        </div>
+        <div class="main__banners">
+            <div class="main__banners_visit">
+                <p class="main__banners_visit_h">Visit Us</p>
+                <p class="main__banners_visit_address">Head Office
+                    <br>
+                    16 Boulevard Saint-Germain
+                    <br>
+                    75005 Paris
+                </p>
+                <p class="main__banners_visit_s">CONTACT US</p>
+            </div>
+        
+            <div class="main__banners_follow">
+                <p class="main__banners_follow_h">Follow Our Store <br> On Instagram</p>
+                <p class="main__banners_follow_link"><a href="https://www.instagram.com/" target="_blank">@BEETROOT</a></p>
+            </div>    
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__box">
+            <div class="footer__box_item">
+                <a>About Us</a>
+                <a>Read Our Blog</a>
+                <a>Contact Us</a>
+                <a>Store Location</a>
+            </div>
+            <div class="footer__box_item">
+                <a>FAQs</a>
+                <a>Order Tracking</a>
+                <a>Privacy Policy</a>
+                <a>Shipping and Returns</a>
+            </div>
+            <div class="footer__box_item">
+                <a>Living Rooms</a>
+                <a>Bathroom</a>
+                <a>Kitchen</a>
+                <a>Lighting</a>
+            </div>
+            <div class="footer__box_item">
+                <p class="footer__box_item_h">Newsletter Subscribe</p>
+            <p class="footer__box_item_subh">Get instant updates about our new products and special promos!</p>
+            <form id="myform">
+                <div class="form-group">
+                    <input type="email" name="email" required value placeholder="Your email adress">
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+            </form>
+            <div class="error-field"></div>
+        </div>    
+        </div>
+        </div>
+                <!-- scroll -->
+                <div class="progress__scroll"></div>
+                <!-- /scroll -->
+        <div class="copyright">
+            <div class="copyright__container">
+                <!-- Social -->
+                <div class="copyright__social">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <div class="social-item social-item_twitter"></div>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <div class="social-item social-item_facebook"></div>
+                    </a>
+                    <a href="https://www.pinterest.com" target="_blank">
+                        <div class="social-item social-item_pinterest"></div>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <div class="social-item social-item_instagram"></div>
+                    </a>
+                </div>
+                <!-- Copy -->
+                <div class="copyright__copy">&copy; 2020 <strong>Barberry.</strong> All rights reserved.</div>
+                <!-- Payment -->
+                <div class="copyright__payment">
+                    <img class="payment-icon" src="i/visa.svg" alt="">
+                    <img class="payment-icon" src="i/mastercard.svg" alt="">
+                    <img class="payment-icon" src="i/amex.svg" alt="">
+                    <img class="payment-icon" src="i/paypal.svg" alt="">
+                    <img class="payment-icon" src="i/diners-club.svg" alt="">
+                    <img class="payment-icon" src="i/discover.svg" alt="">
+                </div> 
+            </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/ssm.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="/slick/slick.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
