@@ -32,6 +32,6 @@
     "webpack-merge-and-include-globally": "^2.1.20"
   },
   "dependencies": {
-    "jquery-validation": "^1.19.1"
+    "jquery-validation": "^1.19.3"
   }
 }
